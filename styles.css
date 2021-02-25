@@ -1,0 +1,21 @@
+body{
+    background-color: floralwhite;
+}
+
+.tools > img {
+    height: 150px;
+    
+}
+
+.tools > p {
+    width: 100%;
+}
+
+.tools {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.proj {
+    height: 500px;
+}
