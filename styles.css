@@ -1,4 +1,30 @@
+html {
+	scroll-behavior: smooth;
+}
+
 body {
+	background-color: grey;
+}
+
+.main {
+}
+
+.main,
+.bio,
+.tech {
+	background-color: white;
+}
+
+.one {
+	background-color: white;
+}
+
+.two {
+	/* margin-top: -95px;
+	z-index: 10; */
+}
+
+.color1 {
 	background-color: ghostwhite;
 }
 
@@ -20,14 +46,43 @@ body {
 }
 
 .main {
-	height: 70vh;
-	border: 5px solid red;
+	height: 60vh;
+	/* border: 5px solid red; */
+	border-bottom-right-radius: 500px 100px;
+	border-bottom-left-radius: 500px 100px;
+
+	overflow: hidden;
 }
 
-.main > img {
-	max-width: 100%;
+.background {
+	height: 100%;
+	width: 100%;
+	display: inline-block;
+	position: relative;
+	text-align: center;
+}
+
+.background > img {
 	max-height: 100%;
-	padding-top: 50px;
+	max-width: 100%;
+}
+
+.over {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+/* .background {
+	background-image: url("https://i.imgur.com/ZhTLHzy.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 0;
+	padding-top: 66.64%;
+} */
+.main > button {
 }
 
 .sd {
@@ -41,7 +96,11 @@ body {
 
 .bio {
 	height: 70vh;
-	border: 5px solid red;
+	/* border: 5px solid red; */
+	border-bottom-right-radius: 500px 100px;
+	border-bottom-left-radius: 500px 100px;
+	overflow: hidden;
+	background-color: ghostwhite;
 }
 
 .bio-text {
@@ -63,10 +122,26 @@ body {
 	width: 100%;
 }
 
+.here {
+	height: 30vh;
+	border-bottom-right-radius: 0px;
+	border-bottom-left-radius: 0px;
+	background-color: gray;
+}
+
+.color2 {
+	background-image: linear-gradient(to right, cyan, darkblue);
+}
+
 .tech {
 	display: flex;
 	flex-wrap: wrap;
-	border: 5px solid red;
+	/* border: 5px solid red; */
+	border-bottom-right-radius: 500px 100px;
+	border-bottom-left-radius: 500px 100px;
+	overflow: hidden;
+	background-image: linear-gradient(to right, cyan, darkblue);
+	color: white;
 }
 
 .item {
@@ -75,5 +150,29 @@ body {
 
 .icon {
 	padding-top: 30px;
-	height: 50px;
+	height: 75px;
+}
+
+.thanks {
+	padding-top: 5%;
+}
+
+footer {
+	margin-top: -5px;
+	/* margin-bottom: 50px; */
+	height: 100px;
+	border-top-right-radius: 500px 100px;
+	border-top-left-radius: 500px 100px;
+	background-color: white;
+	/* border: 5px solid red; */
+}
+
+.foot > a {
+	padding-right: 30px;
+	padding-top: 25px;
+}
+
+.foot {
+	display: flex;
+	justify-content: center;
 }
