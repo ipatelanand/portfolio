@@ -28,6 +28,12 @@
 		/>
 		<link rel="stylesheet" href="styles.css" />
 		<script src="app.js"></script>
+		<script>
+			let xhr = new XMLHttpRequest()
+			xhr.open("GET", "https://resinvest.herokuapp.com/", true)
+			let xhr2 = new XMLHttpRequest()
+			xhr.open("GET", "https://tweet-city.herokuapp.com/home", true)
+		</script>
 		<title>Anand's Portfolio</title>
 	</head>
 	<body>
@@ -38,10 +44,36 @@
 
 					<ul class="navbar-nav">
 						<li class="nav-item">
+							<a class="nav-link" href="#foot">Contact Me</a>
+						</li>
+						<li class="nav-item">
 							<a class="nav-link" href="/portfolio/resume.pdf">Resume</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">Projects</a>
+							<div class="dropdown">
+								<button class="dropbtn">Projects</button>
+								<div class="dropdown-content">
+									<a
+										href="https://tweet-city.herokuapp.com/home"
+										target="_blank"
+										rel="noopener noreferrer"
+										>Tweet-City</a
+									>
+									<a
+										href="https://resinvest.herokuapp.com/"
+										target="_blank"
+										rel="noopener noreferrer"
+										>ResInvest</a
+									>
+									<a
+										class="git"
+										href="https://github.com/ipatelanand?tab=repositories"
+										target="_blank"
+										rel="noopener noreferrer"
+										>ALL CODE</a
+									>
+								</div>
+							</div>
 						</li>
 					</ul>
 				</div>
@@ -53,12 +85,10 @@
 					<!-- <img src="https://i.imgur.com/ZhTLHzy.png" /> -->
 				</div>
 				<div class="over">
-					<h1 class="">Software Developer</h1>
+					<h1 class="soft">Software Developer</h1>
 
 					<a href="#bio"
-						><button class="btn btn-light btn-lg">
-							Welcome to my Portfolio
-						</button></a
+						><button class="btn btn-primary">Welcome to my Portfolio</button></a
 					>
 				</div>
 			</div>
@@ -197,7 +227,7 @@
 			</h1>
 		</div>
 
-		<footer class="text-center">
+		<footer class="text-center" id="foot">
 			<div class="foot">
 				<a
 					href="https://www.linkedin.com/in/ipatelanand/"
