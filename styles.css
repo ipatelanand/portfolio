@@ -107,7 +107,7 @@ body {
 }
 
 .bio {
-	height: 600px;
+	height: 700px;
 	/* border: 5px solid red; */
 	border-bottom-right-radius: 500px 100px;
 	border-bottom-left-radius: 500px 100px;
@@ -118,6 +118,7 @@ body {
 .bio-text {
 	/* height: 100%;
 	width: 100%; */
+	padding-top: 2%;
 	width: 50%;
 	margin-left: 25%;
 	display: flex;
